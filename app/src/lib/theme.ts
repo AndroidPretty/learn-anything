@@ -1,38 +1,38 @@
 // https://github.com/pacocoursey/paco/blob/master/lib/theme.ts
-import { useCallback, useEffect } from "react";
-import useSWR from "swr";
+import { useCallback, useEffect } from "react"
+import useSWR from "swr"
 
-export type Theme = "dark" | "light";
+export type Theme = "dark" | "light"
 
-export const themeStorageKey = "theme";
+export const themeStorageKey = "theme"
 
-const isServer = typeof window === "undefined";
+const isServer = typeof window === "undefined"
 export const getTheme = (): Theme => {
-  if (isServer) return "dark";
-  return (localStorage.getItem(themeStorageKey) as Theme) || "dark";
-};
+  if (isServer) return "dark"
+  return (localStorage.getItem(themeStorageKey) as Theme) || "dark"
+}
 
 export const setLightMode = () => {
   try {
-    localStorage.setItem(themeStorageKey, "light");
-    document.documentElement.classList.add("light");
+    localStorage.setItem(themeStorageKey, "light")
+    document.documentElement.classList.add("light")
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
-};
+}
 
 export const setDarkMode = () => {
   try {
-    localStorage.setItem(themeStorageKey, "dark");
-    document.documentElement.classList.remove("light");
+    localStorage.setItem(themeStorageKey, "dark")
+    document.documentElement.classList.remove("light")
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
-};
+}
 
 const disableAnimation = () => {
-  const css = document.createElement("style");
-  css.type = "text/css";
+  const css = document.createElement("style")
+  css.type = "text/css"
   css.appendChild(
     document.createTextNode(
       `* {
@@ -43,45 +43,45 @@ const disableAnimation = () => {
         transition: none !important;
       }`
     )
-  );
-  document.head.appendChild(css);
+  )
+  document.head.appendChild(css)
 
   return () => {
     // Force restyle
-    (() => window.getComputedStyle(css).opacity)();
-    document.head.removeChild(css);
-  };
-};
+    ;(() => window.getComputedStyle(css).opacity)()
+    document.head.removeChild(css)
+  }
+}
 
 const useTheme = () => {
   const { data: theme, mutate } = useSWR(themeStorageKey, getTheme, {
     initialData: getTheme(),
-  });
+  })
 
   const setTheme = useCallback(
     (newTheme: Theme) => {
-      mutate(newTheme, false);
+      mutate(newTheme, false)
     },
     [mutate]
-  );
+  )
 
   useEffect(() => {
-    const enable = disableAnimation();
+    const enable = disableAnimation()
 
     if (theme === "dark") {
-      setDarkMode();
+      setDarkMode()
     } else {
-      setLightMode();
+      setLightMode()
     }
 
-    enable();
-  }, [theme]);
+    enable()
+  }, [theme])
 
   return {
     theme,
     setTheme,
     toggleTheme: () => setTheme(!theme || theme === "dark" ? "light" : "dark"),
-  };
-};
+  }
+}
 
-export default useTheme;
+export default useTheme

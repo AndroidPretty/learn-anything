@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-const isCtrl = e => e.metaKey || e.ctrlKey
+const isCtrl = (e) => e.metaKey || e.ctrlKey
 
 // https://keycode.info
 export const useKeyBindings = (
@@ -12,7 +12,7 @@ export const useKeyBindings = (
   useEffect(() => {
     document.addEventListener(
       eventListener,
-      event => {
+      (event) => {
         const { code } = event
         const keyBinding = keyBindings[code]
         if (keyBinding === undefined) return
@@ -25,7 +25,7 @@ export const useKeyBindings = (
     )
 
     return () =>
-      Object.keys(keyBindings).forEach(keyBinding =>
+      Object.keys(keyBindings).forEach((keyBinding) =>
         document.removeEventListener(eventListener, keyBindings[keyBinding])
       )
   }, [])

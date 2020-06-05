@@ -12,11 +12,10 @@ class Document extends NextDocument {
               __html: `(function() {
                 try {
                   var mode = localStorage.getItem('${themeStorageKey}')
-                  console.log(mode)
                   if (!mode) return
                   if (mode == "light") document.documentElement.classList.add(mode)
                 } catch (e) {}
-              })()`
+              })()`,
             }}
           />
           <Main />

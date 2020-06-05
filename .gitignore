@@ -1,9 +1,10 @@
 # general
 .DS_Store
 
-# app
-node_modules
-.next
-.env.local
+# api
 data
 
+# app
+.next
+node_modules
+.env.local
