@@ -1,5 +1,5 @@
-import gql from "graphql-tag"
 import React from "react"
+import gql from "graphql-tag"
 import { useQuery } from "urql"
 import { Plus, Bookmark, Link, User } from "../components/icons"
 
@@ -29,7 +29,6 @@ const IndexPage = () => {
       <div
         style={{
           display: "flex",
-          alignItems: "center",
         }}
       >
         <h1>Learn Anything</h1>
@@ -38,14 +37,16 @@ const IndexPage = () => {
             display: "flex",
             flex: 1,
             justifyContent: "flex-end",
+            alignItems: "center",
           }}
         >
-          <Plus />
+          <Plus size={32} />
           {/* Only show these icons when authenticated */}
-          <Bookmark />
-          <Link />
+          <Bookmark size={32} />
           {/* Placeholder, show user avatar once authenticated */}
-          <User />
+          <User size={32} />
+          {/* TODO: Show underneath user avatar */}
+          {/* <Link size={32} /> */}
         </div>
       </div>
       <ul>
