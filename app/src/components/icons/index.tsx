@@ -1,0 +1,5 @@
+export { default as Bookmark } from "./bookmark"
+export { default as BookmarkFill } from "./bookmark-fill"
+export { default as Link } from "./link"
+export { default as Plus } from "./plus"
+export { default as User } from "./user"
