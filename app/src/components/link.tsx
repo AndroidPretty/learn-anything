@@ -1,16 +1,14 @@
 import React, { useState } from "react"
 import gql from "graphql-tag"
 import { useQuery } from "urql"
-import { Bookmark, BookmarkFill, Heart, HeartFill } from "./icons"
+import { Bookmark, BookmarkFill } from "./icons"
 
 const linkQuery = gql`
-  query($id: Int!) {
-    links_aggregate(where: { id: { _eq: $id } }) {
-      nodes {
-        name
-        comment
-        url
-      }
+  query($id: uuid!) {
+    links_by_pk(id: $id) {
+      name
+      comment
+      url
     }
   }
 `
@@ -20,9 +18,9 @@ const Link = ({ id }) => {
     query: linkQuery,
     variables: { id },
   })
-  const link = result.data.links_aggregate.nodes[0]
+  const link = result.data.links_by_pk
 
-  // TODO: Grab state from query
+  // TODO: Grab state from user query
   const [saved, setSaved] = useState(false)
 
   return (

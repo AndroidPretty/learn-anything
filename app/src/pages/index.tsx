@@ -12,9 +12,7 @@ const query = gql`
 `
 
 const BookmarksPage = () => {
-  const [result] = useQuery({
-    query: query,
-  })
+  const [result] = useQuery({ query })
 
   return (
     <div>
