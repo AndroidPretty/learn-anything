@@ -8,7 +8,8 @@ import { DefaultSeo } from "next-seo"
 import "../styles.css"
 
 const title = "Learn Anything"
-const description = "" // TODO
+const description =
+  "Organize the world's knowledge, explore connections and curate learning paths"
 const SEO = {
   title,
   description,
