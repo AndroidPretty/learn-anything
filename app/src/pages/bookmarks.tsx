@@ -3,6 +3,7 @@ import { useQuery } from "urql"
 import Header from "../components/header"
 import Link from "../components/link"
 
+// TODO: Grab IDs of the current user's bookmarks
 const query = gql`
   query {
     links {

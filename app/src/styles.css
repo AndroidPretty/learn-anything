@@ -10,11 +10,15 @@ html {
 
 :root {
   /* Spacing */
+  --small-gap: 0.5rem;
+  --gap: 1rem;
   --main-content: 45rem;
 
   /* Dark Mode Colors */
   --bg: #131415;
   --fg: #fafbfc;
+  --gray: #666;
+  --light-gray: #444;
   --selection: rgba(255, 255, 255, 0.99);
 
   /* Static Colours */
@@ -24,6 +28,8 @@ html {
 .light {
   --bg: #fff;
   --fg: #000;
+  --gray: #888;
+  --light-gray: #dedede;
   --selection: rgba(0, 0, 0, 0.99);
 }
 
@@ -57,4 +63,10 @@ a {
 
 a:hover {
   color: var(--red);
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--light-gray);
 }
