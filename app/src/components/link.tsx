@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import gql from "graphql-tag"
-import { useQuery } from "urql"
+import { useQuery, useMutation } from "urql"
+import { deleteLinkMutation } from "../lib/mutations"
 import { Bookmark, BookmarkFill } from "./icons"
 
 const linkQuery = gql`
@@ -23,9 +24,28 @@ const Link = ({ id }) => {
   // TODO: Grab state from user query
   const [saved, setSaved] = useState(false)
 
+  const [removeLinkResult, removeLink] = useMutation(deleteLinkMutation)
+
   return (
     <div style={{ marginBottom: "var(--gap)" }}>
-      <a href={link.url}>{link.name}</a>
+      <div style={{ display: "flex" }}>
+        <a href={link.url}>{link.name}</a>
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            justifyContent: "flex-end",
+          }}
+        >
+          <button
+            onClick={(e) =>
+              removeLink({ id }).then((result) => console.log(result.error))
+            }
+          >
+            Delete
+          </button>
+        </div>
+      </div>
       <blockquote style={{ marginTop: "var(--small-gap)" }}>
         {link.comment}
       </blockquote>
