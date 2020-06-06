@@ -37,13 +37,7 @@ const Link = ({ id }) => {
             justifyContent: "flex-end",
           }}
         >
-          <button
-            onClick={(e) =>
-              removeLink({ id }).then((result) => console.log(result.error))
-            }
-          >
-            Delete
-          </button>
+          <button onClick={(e) => removeLink({ id })}>Delete</button>
         </div>
       </div>
       <blockquote style={{ marginTop: "var(--small-gap)" }}>
