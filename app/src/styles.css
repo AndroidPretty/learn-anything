@@ -19,6 +19,7 @@ html {
   --fg: #fafbfc;
   --gray: #666;
   --light-gray: #444;
+  --overlay: rgba(0, 0, 0, 0.6);
   --selection: rgba(255, 255, 255, 0.99);
 
   /* Static Colours */
@@ -30,6 +31,7 @@ html {
   --fg: #000;
   --gray: #888;
   --light-gray: #dedede;
+  --overlay: rgba(0, 0, 0, 0.3);
   --selection: rgba(0, 0, 0, 0.99);
 }
 
