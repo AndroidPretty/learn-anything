@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import gql from "graphql-tag"
 import { useQuery, useMutation } from "urql"
 import { deleteLinkMutation } from "../lib/mutations"
-import { Bookmark, BookmarkFill } from "./icons"
+import { Bookmark } from "./icons"
 
 const linkQuery = gql`
   query($id: uuid!) {
@@ -30,7 +30,8 @@ const Link = ({ id }) => {
     <div style={{ marginBottom: "var(--gap)" }}>
       <div style={{ display: "flex" }}>
         <a href={link.url}>{link.name}</a>
-        <div
+        {/* TODO: Only show for users with correct permissions */}
+        {/* <div
           style={{
             display: "flex",
             flex: 1,
@@ -38,7 +39,7 @@ const Link = ({ id }) => {
           }}
         >
           <button onClick={(e) => removeLink({ id })}>Delete</button>
-        </div>
+        </div> */}
       </div>
       <blockquote style={{ marginTop: "var(--small-gap)" }}>
         {link.comment}
@@ -48,7 +49,7 @@ const Link = ({ id }) => {
           onClick={(e) => setSaved(!saved)}
           style={{ cursor: "pointer", color: "var(--red)" }}
         >
-          {saved ? <BookmarkFill /> : <Bookmark />}
+          <Bookmark fill={`${saved ? "var(--red)" : "none"}`} />
         </span>
         {/* {` / `} */}
         <span style={{ fontStyle: "italic", color: "var(--gray)" }}>

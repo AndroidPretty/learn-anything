@@ -20,18 +20,18 @@ const Header = () => {
           justifyContent: "flex-end",
         }}
       >
-        <Plus size={32} />
+        <Plus size={28} />
         {/* Only show these icons when authenticated */}
         <span
           onClick={(e) => router.push("/bookmarks")}
           style={{ cursor: "pointer" }}
         >
-          <Bookmark size={32} />
+          <Bookmark size={28} />
         </span>
         {/* Placeholder, show user avatar once authenticated */}
-        <User size={32} />
+        <User size={28} />
         {/* TODO: Show underneath user avatar */}
-        {/* <Link size={32} /> */}
+        {/* <Link size={28} /> */}
       </div>
     </div>
   )
