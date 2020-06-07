@@ -18,8 +18,10 @@ export const useKeyBindings = (
         if (keyBinding === undefined) return
         const condition = keyBinding.ctrl ? isCtrl(event) : true
         if (!condition) return
-        event.preventDefault()
-        keyBinding.fn(event)
+        if (event.target.type != "text") {
+          event.preventDefault()
+          keyBinding.fn(event)
+        }
       },
       false
     )
