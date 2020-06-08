@@ -3,7 +3,7 @@ import { NextUrqlAppContext, withUrqlClient } from "next-urql"
 import NextApp, { AppProps } from "next/app"
 import React from "react"
 import { DefaultSeo } from "next-seo"
-import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core"
+import { ThemeProvider, CSSReset } from "@chakra-ui/core"
 
 const title = "Learn Anything"
 const description =
@@ -37,11 +37,9 @@ const SEO = {
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider>
-      <ColorModeProvider>
-        <CSSReset />
-        <DefaultSeo {...SEO} />
-        <Component {...pageProps} />
-      </ColorModeProvider>
+      <CSSReset />
+      <DefaultSeo {...SEO} />
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }

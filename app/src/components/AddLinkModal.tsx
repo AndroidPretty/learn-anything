@@ -46,7 +46,7 @@ const AddLinkModal = () => {
         <ModalContent as="form" onSubmit={handleSubmit(onCreateSite)}>
           <ModalHeader fontWeight="bold">Add Link</ModalHeader>
           <ModalBody pb={6}>
-            <FormControl>
+            <FormControl isRequired>
               <FormLabel>Name</FormLabel>
               <Input
                 name="name"
@@ -56,7 +56,7 @@ const AddLinkModal = () => {
               />
             </FormControl>
 
-            <FormControl mt={4}>
+            <FormControl isRequired mt={4}>
               <FormLabel>Link</FormLabel>
               <Input
                 name="url"

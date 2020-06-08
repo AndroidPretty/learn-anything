@@ -1,6 +1,4 @@
 import { useRouter } from "next/router"
-import { useColorMode } from "@chakra-ui/core"
-import { useKeyBindings } from "../lib/key"
 import AddLinkModal from "./AddLinkModal"
 import { Bookmark, User, Link } from "../components/icons"
 
@@ -13,13 +11,6 @@ import {
 
 const Header = () => {
   const router = useRouter()
-  const { colorMode, toggleColorMode } = useColorMode()
-
-  useKeyBindings({
-    KeyT: {
-      fn: () => toggleColorMode(),
-    },
-  })
 
   return (
     <>
