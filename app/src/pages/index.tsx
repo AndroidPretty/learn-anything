@@ -17,7 +17,7 @@ const BookmarksPage = () => {
   return (
     <div>
       <Header />
-      {result.data.links.map((link) => (
+      {result?.data?.links.map((link) => (
         <Link id={link.id} key={link.id} />
       ))}
     </div>
