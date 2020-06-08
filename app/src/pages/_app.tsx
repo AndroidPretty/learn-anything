@@ -2,10 +2,8 @@ import fetch from "isomorphic-unfetch"
 import { NextUrqlAppContext, withUrqlClient } from "next-urql"
 import NextApp, { AppProps } from "next/app"
 import React from "react"
-import { useKeyBindings } from "../lib/key"
-import { getTheme, setDarkMode, setLightMode } from "../lib/theme"
 import { DefaultSeo } from "next-seo"
-import "../styles.css"
+import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core"
 
 const title = "Learn Anything"
 const description =
@@ -37,23 +35,14 @@ const SEO = {
 }
 
 const App = ({ Component, pageProps }: AppProps) => {
-  useKeyBindings({
-    KeyT: {
-      fn: () => {
-        if (getTheme() == "light") {
-          setDarkMode()
-        } else {
-          setLightMode()
-        }
-      },
-    },
-  })
-
   return (
-    <>
-      <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
-    </>
+    <ThemeProvider>
+      <ColorModeProvider>
+        <CSSReset />
+        <DefaultSeo {...SEO} />
+        <Component {...pageProps} />
+      </ColorModeProvider>
+    </ThemeProvider>
   )
 }
 
