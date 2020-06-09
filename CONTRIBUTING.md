@@ -2,7 +2,7 @@
 
 Thank you for taking the time to contribute! ♥️
 
-Currently, the code for the new version if being worked on in private (until we figure out how to make development work locally for everyone).
+Currently, the code for the new version is being worked on in private (until we figure out how to make development work locally for everyone).
 
 We welcome you to join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together.
 
