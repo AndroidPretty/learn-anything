@@ -32,6 +32,4 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
   </tr>
 </table>
 
-If you like the project, please support us on [Patreon](https://patreon.com/learnanything). ♥️
-
 [![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/latwitt)](https://twitter.com/learnanything_)
