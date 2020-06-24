@@ -14,7 +14,7 @@ We are working on new version in private (as we figure out how to open the proje
 
 We welcome you to join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together. There are [docs](https://docs.learn-anything.xyz) available that describe the goals of the project as well as an open wiki of notes.
 
-We also manage curation of [some lists](https://github.com/learn-anything/curated-lists).
+We also manage curation of [awesome lists](https://github.com/learn-anything/curated-lists).
 
 ## Tech stack
 
