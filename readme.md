@@ -1,6 +1,6 @@
 # [![Learn Anything](https://raw.githubusercontent.com/learn-anything/docs/master/media/header.png)](https://learn-anything.xyz/)
 
-# Learn Anything [![Discord](https://img.shields.io/badge/-Discord-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://discord.gg/KKYdWjt)
+# Learn Anything
 
 > Organize world's knowledge, explore relations and curate learning paths
 
@@ -43,4 +43,4 @@ If you wish to invest in the project please contact [Nikita](https://nikitavolob
   </tr>
 </table>
 
-[![Twitter](http://bit.ly/latwitt)](https://twitter.com/learnanything_)
+[![Discord](https://img.shields.io/badge/-Discord-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://discord.gg/KKYdWjt) [![Twitter](http://bit.ly/latwitt)](https://twitter.com/learnanything_)
