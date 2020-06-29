@@ -8,7 +8,7 @@
 - **Explore**: Powerful tools to connect learned topics together. Explore global map of all the topics to learn.
 - **Ideas**: Powerful tools to track & manage personal ideas. Find people to work on ideas together. Get direct support for your novel ideas.
 
-### What is it
+## What is it
 
 The vision of project is to create the best platform possible for learning any topic as well as finding & building novel ideas together.
 
@@ -18,7 +18,7 @@ If you are interested in helping us out, please join our community on [Discord](
 
 The code for last release of Learn Anything deployed at [learn-anything.xyz](https://learn-anything.xyz) can be found [here](https://github.com/learn-anything/2017-release). You are welcome to do anything you wish with it.
 
-### Help us build it
+## Help us build it
 
 We share most of our plans & docs in public as we build the project out. We author everything in Notion & all our public documents can be viewed [here](https://www.notion.so/learnany/Public-b3b8e046a6bc44549367b84423360b93).
 
