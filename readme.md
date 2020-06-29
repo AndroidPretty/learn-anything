@@ -33,7 +33,7 @@ If you wish to join our team, we would love to have you but currently we lack an
 
 If you wish to invest in the project please contact [Nikita](https://nikitavoloboev.xyz). Thank you. ❤️
 
-## Team ✨
+## Team
 
 <table>
   <tr>
