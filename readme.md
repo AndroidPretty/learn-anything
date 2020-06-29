@@ -4,13 +4,13 @@
 
 > Organize world's knowledge, explore relations and curate learning paths
 
-- **Learn**: Personal link manager. Study guides created and improved by users.
-- **Explore**: Explore topics and their relationships.
-- **Ideas**: Share and find ideas to build.
+- **Learn**: Powerful personal link manager. Curated study guides for learning any topic. Knowledge graph of topics to learn.
+- **Explore**: Powerful tools to connect learned topics together. Explore global map of all the topics to learn.
+- **Ideas**: Powerful tools to track & manage personal ideas. Find people to work on ideas together. Get direct support for your novel ideas.
 
 ### What is it
 
-The vision of project is to create the best platform possible for learning anything as well as finding & building novel ideas together.
+The vision of project is to create the best platform possible for learning any topic as well as finding & building novel ideas together.
 
 Please read [our roadmap](https://docs.learn-anything.xyz/roadmap) where we outline the problems we want to solve with building this platform and how we plan to solve them.
 
