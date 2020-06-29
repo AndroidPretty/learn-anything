@@ -2,27 +2,27 @@
 
 # Learn Anything [![Discord](https://img.shields.io/badge/-Discord-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://discord.gg/KKYdWjt)
 
-#### Organize world's knowledge, explore relations and curate learning paths
+> Organize world's knowledge, explore relations and curate learning paths
 
 - **Learn**: Personal link manager. Study guides created and improved by users.
 - **Explore**: Explore topics and their relationships.
 - **Ideas**: Share and find ideas to build.
 
-The [vision of project](https://docs.learn-anything.xyz/roadmap) is to create the best platform possible for learning anything as well as finding & building novel ideas together.
+### What is it
 
-In future we also plan to create a machine learning system that can craft personalized study plans for learning any topic that will use an open knowledge graph anyone can explore and extend.
+The vision of project is to create the best platform possible for learning anything as well as finding & building novel ideas together.
 
-The code found in this repo is not working as we are working on the new version of the website in private. In future we would love to make the project be available as open source code but we have to make the development of it sustainable first and make the open source contribution flow possible (local database with same schema).
+Please read [our roadmap](https://docs.learn-anything.xyz/roadmap) where we outline the problems we want to solve with building this platform and how we plan to solve them.
 
-We hope to release a new version of the website very soon. If you are interested in helping out, please join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together.
+If you are interested in helping us out, please join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together.
 
-The current version of the website can be found at [learn-anything.xyz](https://learn-anything.xyz) and the code for it can be found [here](https://github.com/learn-anything/2017-release). You are welcome to do anything you wish with it.
+The code for last release of Learn Anything deployed at [learn-anything.xyz](https://learn-anything.xyz) can be found [here](https://github.com/learn-anything/2017-release). You are welcome to do anything you wish with it.
+
+### Help us build it
 
 We share most of our plans & docs in public as we build the project out. We author everything in Notion & all our public documents can be viewed [here](https://www.notion.so/learnany/Public-b3b8e046a6bc44549367b84423360b93).
 
-We also manage curation of various [awesome lists](https://github.com/learn-anything/curated-lists).
-
-## Tech stack
+Our tech stack is:
 
 - [NextJS](https://nextjs.org) for rendering things on the web.
 - [Postgres](https://www.postgresql.org) to store all the data.
@@ -43,4 +43,4 @@ If you wish to invest in the project please contact [Nikita](https://nikitavolob
   </tr>
 </table>
 
-[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](license) [![Twitter](http://bit.ly/latwitt)](https://twitter.com/learnanything_)
+[![Twitter](http://bit.ly/latwitt)](https://twitter.com/learnanything_)
