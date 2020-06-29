@@ -8,20 +8,30 @@
 - **Explore**: Explore topics and their relationships.
 - **Ideas**: Share and find ideas to build.
 
-The [end goal](https://docs.learn-anything.xyz/roadmap) is to create a machine learning system that can craft personalized study plans for learning any topic and an open knowledge graph anyone can explore and extend.
+The [vision of project](https://docs.learn-anything.xyz/roadmap) is to create the best platform possible for learning anything as well as finding & building novel ideas together.
 
-We are working on new version in private (as we figure out how to open the project to contributions). The code for old release (one currently deployed at [learn-anything.xyz](https://learn-anything.xyz)) can be found [here](https://github.com/learn-anything/2017-release).
+In future we also plan to create a machine learning system that can craft personalized study plans for learning any topic that will use an open knowledge graph anyone can explore and extend.
 
-We welcome you to join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together. There are [docs](https://docs.learn-anything.xyz) available that describe the goals of the project as well as an open wiki of notes.
+The code found in this repo is not working as we are working on the new version of the website in private. In future we would love to make the project be available as open source code but we have to make the development of it sustainable first and make the open source contribution flow possible (local database with same schema).
 
-We also manage curation of [awesome lists](https://github.com/learn-anything/curated-lists).
+We hope to release a new version of the website very soon. If you are interested in helping out, please join our community on [Discord](https://discord.gg/KKYdWjt) to learn & build this project together.
+
+The current version of the website can be found at [learn-anything.xyz](https://learn-anything.xyz) and the code for it can be found [here](https://github.com/learn-anything/2017-release). You are welcome to do anything you wish with it.
+
+We share most of our plans & docs in public as we build the project out. We author everything in Notion & all our public documents can be viewed [here](https://www.notion.so/learnany/Public-b3b8e046a6bc44549367b84423360b93).
+
+We also manage curation of various [awesome lists](https://github.com/learn-anything/curated-lists).
 
 ## Tech stack
 
-- [NextJS](https://nextjs.org) for rendering things
-- [PostgresDB](https://www.postgresql.org) to store all the data
-- [Hasura](https://hasura.io) for GraphQL API on top of Postgres DB
-- [Go](https://golang.org) for all things backend (Hasura actions, ..)
+- [NextJS](https://nextjs.org) for rendering things on the web.
+- [Postgres](https://www.postgresql.org) to store all the data.
+- [Hasura](https://hasura.io) for GraphQL API on top of Postgres.
+- [Go](https://golang.org) for all things backend (Hasura actions, serverless functions).
+
+If you wish to join our team, we would love to have you but currently we lack any funds to support anyone. We hope that changes in the near future as we release the website.
+
+If you wish to invest in the project please contact [Nikita](https://nikitavoloboev.xyz). Thank you. ❤️
 
 ## Team ✨
 
